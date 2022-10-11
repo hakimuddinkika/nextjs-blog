@@ -4,9 +4,11 @@ import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
 
+import Layout from "../../components/Layout";
+
 export default function FirstPost() {
     return (
-        <>
+        <Layout>
             <Head>
                 <title>First Post</title>
                 {/* <script src="https://connect.facebook.net/en_US/sdk.js" /> */}
@@ -24,6 +26,6 @@ export default function FirstPost() {
                 {/* <Image src="/images/profile.jpg" height={199} width={199} alt="Profile Picture"></Image> */}
                 <Link href="/">Back to Home</Link>
             </h2>
-        </>
+        </Layout>
     );
 }
